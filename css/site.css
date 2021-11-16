@@ -1,0 +1,84 @@
+:root{
+    --primary-color: #C99383;
+    --secondary-color: #83B8C9;
+    --third-color:#b8c983;
+    --dark-color: #233643;
+    --white-color: #fefefe;
+    --black-color: #000000;
+    --bright-color: rgb(248, 173, 10);
+    --brightsecond-color: rgb(54, 101, 146);
+}
+
+body{
+    color: var(--brightsecond-color);
+    background-color: var(--white-color);
+}
+
+nav{
+    background-color: var(--black-color);
+}
+
+
+
+footer{
+    background-color: var(--black-color);
+    padding: 1rem;
+}
+
+footer .social>a{
+    color: var(--white-color);
+    opacity: .75;
+}
+
+footer .social>a:hover{
+    opacity: .9;
+    color: var(--secondary-color)
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--bright-color);
+}
+
+main>.container{
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+}
+.sticky-nav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.checklist{
+    color: var(--brightsecond-color);
+}
+
+.checklist >li i{
+    color: var(--bright-color);    
+}
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+white-space: pre-wrap;
+word-break: break-all;
+word-wrap: break-word;
+}
+
+.bsicon{
+    color:purple;
+}
+
+.jsicon{
+    color:yellow;
+}
+
+.html5icon{
+    color:orangered;
+}
+
+.css3icon{
+    color:rgb(11, 82, 214)
+}
