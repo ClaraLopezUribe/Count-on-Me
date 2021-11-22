@@ -63,16 +63,96 @@
         <div class="row row-cols-1 row-cols-lg-2 g-5 py-1">
             <div class="col-lg-8">
                 <pre class="line-numbers"><code class="language-javascript">
-                    //Call Hello World
-                    function helloWorld() {
-                        alert ("hello World");
-                    }
+                    //CONTROLLER function
+
+function getValues() {
+    
+    //1. Get values from the page
+   
+    let startValue = document.getElementById("startValue").value;
+    let endValue = document.getElementById("endValue").value;
+   
+    //2. Validate input to ensure the use of integers, not strings:
+    
+        //Attempt to parse into integers 
+    
+    startValue = parseInt(startValue);
+    endValue = parseInt(endValue);
+
+        //boolean test to determine next steps
+   
+    if (Number.isInteger(startValue) && (Number.isInteger)(endValue)) {
+
+        //Call generateNumbers
+        let numbers = generateNumbers(startValue, endValue);
+
+    //3. Call displayNumbers
+
+        displayNumbers(numbers);
+
+        // OR display alert
+    } else {
+        alert("Error: You must enter INTEGERS");
+    }
+
+}
+
+//LOGIC function(s)
+function generateNumbers(sValue, eValue) {
+    
+    let numbers = [];
+    
+    //generate all the numbers from start to end
+    for (let index = sValue; index <= eValue; index ++) {
+        
+        //This will execute in a loop until index = eValue
+        numbers.push(index);
+    }
+
+    return numbers;
+
+}
+
+//DISPLAY function(s)
+function displayNumbers(numbers) {
+
+    let templateRows = "";
+
+    for (let index = 0; index < numbers.length; index++) {
+
+        let className = "even";
+        let number = numbers[index];
+
+        //display numbers and mark even numbers in bold
+
+        if(number % 2 == 0) {
+           
+            className = "even";
+
+        } else {
+
+            className = "odd";
+
+        }
+
+        templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>
+        
+    }
+
+    document.getElementById("results").innerHTML = templateRows
+
+}
+
                 </code></pre>
             </div>
             <div class="col-lg-4">
-                <p>The Code is structured in one function</p>
-                <h5>Hello World</h5>
-                <p>Hello World is a function that displays an alert with the message "Hello World"</p>
+                <p>The Code is structured in three functions:</p>
+                <h5>getValues</h5>
+                <p>This function gets the values entered by the user on the app page. It then validates the values to ensure they are integers between 0-100. If they are not, an error message is displayed. Otherwise, the next functions are called.</p>
+                <h5>generateNumbers</h5>
+                <p>This function uses a "for loop" to incrementally generate and return all the numbers from the start value to the end value.</p>
+                <h5>displayNumbers</h5>
+                <p>In this function, an "If/Else" statement is used to identify the odd and even numbers that were generated in the previous step. The results are then inserted into and displayed in a table, with odd numbers in <b>BOLD</b>.</p>
             </div>
         </div>
     </div>
