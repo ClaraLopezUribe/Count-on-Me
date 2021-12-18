@@ -14,9 +14,9 @@ function getValues() {
     startValue = parseInt(startValue);
     endValue = parseInt(endValue);
 
-        //boolean test to determine next steps
+        //boolean test to determine next steps 
    
-    if (Number.isInteger(startValue) && (Number.isInteger)(endValue)) {
+    if (Number.isInteger(startValue) && Number.isInteger(endValue) && (startValue >=0 && endValue <= 100)) {
 
         //Call generateNumbers
         let numbers = generateNumbers(startValue, endValue);
