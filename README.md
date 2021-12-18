@@ -1,2 +1,2 @@
-# Site-Template
-JS site template
+
+JS Project
