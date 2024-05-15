@@ -1,12 +1,19 @@
 :root{
-    --primary-color: #C99383;
-    --secondary-color: #83B8C9;
-    --third-color:#b8c983;
-    --dark-color: #233643;
-    --white-color: #fefefe;
+    --logo-primary-color: #C99383;
+    --logo-secondary-color: #83B8C9;
+    --logo-third-color:#b8c983;
+
+    /*App Specific Color Pallete*/
+    --light: #fefefe;
+    --dark: #232C33;
     --black-color: #000000;
-    --bright-color: #ff5900;
-    --brightsecond-color: #366592;
+    --lightmode-primary: #128082;
+    --bright-accent: #ff5900;
+    --darkmode-accent: #1CCCCE;
+    --darkmode-primary: #e09f3e;
+    
+
+    --brightsecond-color: #ff5900;
 }
 
 .odd{
@@ -19,8 +26,8 @@
 }
 
 body{
-    color: var(--brightsecond-color);
-    background-color: var(--white-color);
+    color: var(--black-color);
+    background-color: var(--light);
 }
 
 nav{
@@ -35,19 +42,29 @@ footer{
 }
 
 footer .social>a{
-    color: var(--white-color);
+    color: var(--light);
     opacity: .75;
 }
 
 footer .social>a:hover{
     opacity: .9;
-    color: var(--secondary-color)
+    color: var(--logo-secondary-color)
 
 }
 
-h1, h2, h3, h4, h5, h6{
-    color: var(--bright-color);
+h1{
+    color: var(--lightmode-primary);
 }
+
+h2, h3, h4, h5, h6{
+    color: var(--lightmode-primary);
+}
+
+.subHeading{
+    color: var(--bright-accent);
+}
+
+
 
 main>.container{
     padding: 60px 15px 0;
@@ -61,11 +78,16 @@ main>.container{
 }
 
 .checklist{
-    color: var(--brightsecond-color);
+    color: var(--lightmode-primary);
 }
 
 .checklist >li i{
-    color: var(--bright-color);    
+    color: var(--bright-accent);    
+}
+
+.alert{
+    color: var(--dark);
+    background-color: var(--darkmode-accent);
 }
 
 
@@ -77,17 +99,17 @@ word-wrap: break-word;
 }
 
 .bsicon{
-    color:purple;
+    color:#7c09f8;
 }
 
 .jsicon{
-    color:yellow;
+    color:#e2d304;
 }
 
 .html5icon{
-    color:orangered;
+    color:#fe4e1d;
 }
 
 .css3icon{
-    color:rgb(11, 82, 214)
+    color:#0b52d6
 }
