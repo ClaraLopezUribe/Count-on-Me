@@ -11,9 +11,6 @@
     --bright-accent: #ff5900;
     --darkmode-accent: #1CCCCE;
     --darkmode-primary: #e09f3e;
-    
-
-    --brightsecond-color: #ff5900;
 }
 
 .odd{
@@ -25,16 +22,18 @@
     font-size:large
 }
 
+
+
 body{
-    color: var(--black-color);
+    color: var(--dark);
     background-color: var(--light);
 }
+
+
 
 nav{
     background-color: var(--black-color);
 }
-
-
 
 footer{
     background-color: var(--black-color);
@@ -49,22 +48,17 @@ footer .social>a{
 footer .social>a:hover{
     opacity: .9;
     color: var(--logo-secondary-color)
-
 }
 
-h1{
-    color: var(--lightmode-primary);
-}
 
-h2, h3, h4, h5, h6{
+
+h1, h2, h3, h4, h5, h6{
     color: var(--lightmode-primary);
 }
 
 .subHeading{
     color: var(--bright-accent);
 }
-
-
 
 main>.container{
     padding: 60px 15px 0;
