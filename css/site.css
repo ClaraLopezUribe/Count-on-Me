@@ -23,12 +23,10 @@
 }
 
 
-
 body{
     color: var(--dark);
     background-color: var(--light);
 }
-
 
 
 nav{
@@ -83,6 +81,7 @@ main>.container{
     color: var(--dark);
     background-color: var(--darkmode-accent);
 }
+
 
 
 code[class*="language-"],

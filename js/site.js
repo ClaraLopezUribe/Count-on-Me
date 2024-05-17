@@ -59,14 +59,16 @@ function displayNumbers(numbers) {
 
         //display numbers and mark even numbers in bold
 
-        if(number % 2 == 0) {
+      
+
+    if(number % 2 == 0) {
            
             className = "even";
 
         } else {
 
             className = "odd";
-
+            
         }
 
         templateRows += `<tr><td class="${className}">${number}</td></tr>`;
@@ -76,3 +78,15 @@ function displayNumbers(numbers) {
     document.getElementById("results").innerHTML = templateRows
 
 }
+
+
+
+
+
+/* Find accessible way to display the even numbers that does not rely exclusively on visual cues
+
+if(number % 2 == 0) {
+    templateRows += `<tr><td>${number}</td></tr>`;
+} else{
+    templateRows += `<tr><td>${number}</td></tr>`;
+}  */
