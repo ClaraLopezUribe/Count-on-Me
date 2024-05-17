@@ -27,9 +27,8 @@ function getValues() {
 
         // OR display alert
     } else {
-        alert("Error: You must enter INTEGERS between 0-100");
+        alert("Error: You must enter whole numbers between 0-100");
     }
-
 }
 
 //LOGIC function(s)

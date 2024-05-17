@@ -19,7 +19,7 @@
 
 .even{
     font-weight: bold;
-    font-size:large
+    font-size:large;
 }
 
 
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6{
     color: var(--lightmode-primary);
 }
 
-.subHeading{
+.subheading{
     color: var(--bright-accent);
 }
 

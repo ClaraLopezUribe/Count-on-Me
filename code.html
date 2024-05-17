@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>COUNT ON ME: A Coding Project by Clara Lopez-Uribe</title>
+    <title>Count On Me: A Coding Project by Clara Lopez-Uribe</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +26,7 @@
     <!--=== Nav Section ===-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/img/favicon-32x32.png" class="d-inline-block align-text-top" height="24" width="24">  COUNT ON ME</a>
+        <a class="navbar-brand" href="#"><img src="/img/favicon-32x32.png" class="d-inline-block align-text-top me-3" height="24" width="24">Count On Me</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,10 +43,10 @@
                         <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="#">Git Repo</a>
+                        <a class="nav-link" target="_blank" href="#">Git Repo (Opens new tag)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="#">About</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                 </ul>
             </div>
@@ -57,8 +57,8 @@
     <main class="flex-shrink-0">
     <div class="container col-xxl-8 py-5 mt-4">
         <div>
-            <h1 class="display-5 lh-2 fw-bold">COUNT ON ME:</h1>
-            <h2 class="display-6 lh-2 mb-4 border-1 border-bottom border-dark"> The CODE</h2>
+            <h1 class="display-4 lh-2 fw-bold">Count On Me:</h1>
+            <p class="display-3 lh-2 mb-4 border-1 border-bottom border-dark subheading"> The Code</p>
         </div>
         <div class="row row-cols-1 row-cols-lg-2 g-5 py-1">
             <div class="col-lg-8">
@@ -92,7 +92,7 @@ function getValues() {
 
         // OR display alert
     } else {
-        alert("Error: You must enter INTEGERS");
+        alert("Error: You must enter whole numbers between 0-100");
     }
 
 }
@@ -135,7 +135,7 @@ function displayNumbers(numbers) {
 
         }
 
-        templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>
+        templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>`;
         
     }
 
@@ -146,12 +146,12 @@ function displayNumbers(numbers) {
                 </code></pre>
             </div>
             <div class="col-lg-4">
-                <p>The Code is structured in three functions:</p>
-                <h5>getValues</h5>
-                <p>This function retrieves the values entered by the user on the app page. It then validates them to ensure they are integers between 0-100. If they are not, an error message is displayed. Otherwise, the next functions are called.</p>
-                <h5>generateNumbers</h5>
+                <p class="display-6">The code is structured in three functions:</p>
+                <h2>getValues</h2>
+                <p>This function retrieves the values entered by the user in the app using the . It then validates them to ensure they are integers between 0-100. If they are not, an error message is displayed. Otherwise, the next functions are declared.</p>
+                <h2>generateNumbers</h2>
                 <p>This function uses a "for loop" to incrementally generate and return all the numbers from the start value to the end value.</p>
-                <h5>displayNumbers</h5>
+                <h2>displayNumbers</h2>
                 <p>In this function, an "If/Else" statement is used to identify the odd and even numbers that were generated in the previous step. The results are then inserted and displayed in a table, with even numbers in <b>BOLD</b>.</p>
             </div>
         </div>
@@ -163,7 +163,7 @@ function displayNumbers(numbers) {
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-3 gy-2">
                 <div class="col d-flex align-items-center order-lg-first text-light">
-                    <div><span class="text-muted">&copy;2021</span> Clara Lopez-Uribe | cluribe.dev@gmail.com</div>
+                    <div><span class="text-muted">&copy;2021</span> Clara Lopez-Uribe | claralopezuribe.com</div>
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
                     <img src="img/Signature White Text Black BG.png" alt="Clara Lopez-Uribe Logo" height="40">
