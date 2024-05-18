@@ -6,9 +6,10 @@
     /*App Specific Color Pallete*/
     --light: #fefefe;
     --dark: #232C33;
-    --black-color: #000000;
+    --pure-white: #ffffff;
+    --pure-blak: #000000;
     --lightmode-primary: #128082;
-    --bright-accent: #ff5900;
+    --lightmode-accent: #ff5900;
     --darkmode-accent: #1CCCCE;
     --darkmode-primary: #e09f3e;
 }
@@ -30,11 +31,11 @@ body{
 
 
 nav{
-    background-color: var(--black-color);
+    background-color: var(--pure-blak);
 }
 
 footer{
-    background-color: var(--black-color);
+    background-color: var(--pure-blak);
     padding: 1rem;
 }
 
@@ -74,12 +75,12 @@ main>.container{
 }
 
 .checklist >li i{
-    color: var(--bright-accent);    
+    color: var(--lightmode-accent);    
 }
 
 .alert{
     color: var(--dark);
-    background-color: var(--darkmode-accent);
+    background-color: var(--darkmode-primary);
 }
 
 
