@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .subheading{
-    color: var(--bright-accent);
+    color: var(--lightmode-accent);
 }
 
 main>.container{
