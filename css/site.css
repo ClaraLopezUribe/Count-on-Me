@@ -14,21 +14,10 @@
     --darkmode-primary: #e09f3e;
 }
 
-.odd{
-    font-weight: 100;
-}
-
-.even{
-    font-weight: bold;
-    font-size:large;
-}
-
-
 body{
     color: var(--dark);
     background-color: var(--light);
 }
-
 
 nav{
     background-color: var(--pure-blak);
@@ -50,7 +39,6 @@ footer .social>a:hover{
 }
 
 
-
 h1, h2, h3, h4, h5, h6{
     color: var(--lightmode-primary);
 }
@@ -63,6 +51,7 @@ main>.container{
     padding: 60px 15px 0;
     margin-bottom: 5rem;
 }
+
 .sticky-nav{
     position: fixed;
     left: 0;
@@ -83,7 +72,14 @@ main>.container{
     background-color: var(--darkmode-primary);
 }
 
+.odd{
+    font-weight: 100;
+}
 
+.even{
+    font-weight: bold;
+    font-size:large;
+}
 
 code[class*="language-"],
 pre[class*="language-"] {
