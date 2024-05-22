@@ -18,7 +18,7 @@ function getValues() {
    
     if (Number.isInteger(startValue) && Number.isInteger(endValue) && (startValue >=0 && endValue <= 100)) {
 
-        //Call generateNumbers
+        //Call LOGIC function
         let numbers = generateNumbers(startValue, endValue);
 
     //3. Call displayNumbers
@@ -27,7 +27,9 @@ function getValues() {
 
         // OR display alert
     } else {
+
         alert("Error: You must enter whole numbers between 0-100");
+
     }
 }
 
@@ -37,9 +39,10 @@ function generateNumbers(sValue, eValue) {
     let numbers = [];
     
     //generate all the numbers from start to end
+     //This loop will execute until index = eValue
+
     for (let index = sValue; index <= eValue; index ++) {
         
-        //This will execute in a loop until index = eValue
         numbers.push(index);
     }
 
@@ -48,6 +51,7 @@ function generateNumbers(sValue, eValue) {
 }
 
 //DISPLAY function(s)
+
 function displayNumbers(numbers) {
 
     let templateRows = "";
@@ -61,15 +65,15 @@ function displayNumbers(numbers) {
 
       
 
-    if(number % 2 == 0) {
-           
-            className = "even";
-
-        } else {
-
-            className = "odd";
+        if(number % 2 == 0) {
             
-        }
+                className = "even";
+
+            } else {
+
+                className = "odd";
+                
+            }
 
         templateRows += `<tr><td class="${className}">${number}</td></tr>`;
         
