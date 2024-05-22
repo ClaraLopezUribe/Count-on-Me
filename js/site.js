@@ -1,4 +1,4 @@
-//CONTROLLER function
+//CONTROLLER function:
 
 function getValues() {
     

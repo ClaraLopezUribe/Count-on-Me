@@ -55,108 +55,108 @@
 
     <!--=== Main Section ===-->
     <main class="flex-shrink-0">
-    <div class="container col-xxl-8 py-5 mt-4">
-        <div>
-            <h1 class="display-4 lh-2 fw-bold">Count On Me:</h1>
-            <h2 class="subheading display-3 lh-2 mb-4 border-1 border-bottom border-dark">The Code</h2>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-2 g-5 py-1">
-            <div class="col-lg-8">
-                <pre class="line-numbers"><code class="language-javascript">
-                    //CONTROLLER function
+        <div class="container col-xxl-8 py-5 mt-lg-5">
+            <div>
+                <h1 class="display-4 lh-2 fw-bold">Count On Me:</h1>
+                <h2 class="subheading display-3 lh-2 mb-4 border-1 border-bottom border-dark">The Code</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 g-5 py-1">
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        //CONTROLLER function
 
-function getValues() {
-    
-    //1. Get values from the page
-   
-    let startValue = document.getElementById("startValue").value;
-    let endValue = document.getElementById("endValue").value;
-   
-    //2. Validate input to ensure the use of integers, not strings:
-    
-        //Attempt to parse into integers 
-    
-    startValue = parseInt(startValue);
-    endValue = parseInt(endValue);
-
-        //boolean test to determine next steps
-   
-        if (Number.isInteger(startValue) && Number.isInteger(endValue) && (startValue >=0 && endValue <= 100)) {
-
-        //Call generateNumbers
-        let numbers = generateNumbers(startValue, endValue);
-
-    //3. Call displayNumbers
-
-        displayNumbers(numbers);
-
-        // OR display alert
-    } else {
-        alert("Error: You must enter whole numbers between 0-100");
-    }
-
-}
-
-//LOGIC function(s)
-function generateNumbers(sValue, eValue) {
-    
-    let numbers = [];
-    
-    //generate all the numbers from start to end
-    for (let index = sValue; index <= eValue; index ++) {
+    function getValues() {
         
-        //This will execute in a loop until index = eValue
-        numbers.push(index);
-    }
+        //1. Get values from the page
+    
+        let startValue = document.getElementById("startValue").value;
+        let endValue = document.getElementById("endValue").value;
+    
+        //2. Validate input to ensure the use of integers, not strings:
+        
+            //Attempt to parse into integers 
+        
+        startValue = parseInt(startValue);
+        endValue = parseInt(endValue);
 
-    return numbers;
+            //boolean test to determine next steps
+    
+            if (Number.isInteger(startValue) && Number.isInteger(endValue) && (startValue >=0 && endValue <= 100)) {
 
-}
+            //Call generateNumbers
+            let numbers = generateNumbers(startValue, endValue);
 
-//DISPLAY function(s)
-function displayNumbers(numbers) {
+        //3. Call displayNumbers
 
-    let templateRows = "";
+            displayNumbers(numbers);
 
-    for (let index = 0; index < numbers.length; index++) {
-
-        let className = "even";
-        let number = numbers[index];
-
-        //display numbers and mark even numbers in bold
-
-        if(number % 2 == 0) {
-           
-            className = "even";
-
+            // OR display alert
         } else {
-
-            className = "odd";
-
+            alert("Error: You must enter whole numbers between 0-100");
         }
 
-        templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>`;
-        
     }
 
-    document.getElementById("results").innerHTML = templateRows
+    //LOGIC function(s)
+    function generateNumbers(sValue, eValue) {
+        
+        let numbers = [];
+        
+        //generate all the numbers from start to end
+        for (let index = sValue; index <= eValue; index ++) {
+            
+            //This will execute in a loop until index = eValue
+            numbers.push(index);
+        }
 
-}
+        return numbers;
 
-                </code></pre>
-            </div>
-            <div class="col-lg-4 py-2">
-                <img src="img/Count on Me 0-100.png" alt="" width="300" height="300">
-                <p class="display-6">The code is structured in three functions:</p>
-                <h2>getValues</h2>
-                <p>This function retrieves the values entered by the user in the app using the . It then validates them to ensure they are integers between 0-100. If they are not, an error message is displayed. Otherwise, the next functions are declared.</p>
-                <h2>generateNumbers</h2>
-                <p>This function uses a "for loop" to incrementally generate and return all the numbers from the start value to the end value.</p>
-                <h2>displayNumbers</h2>
-                <p>In this function, an "If/Else" statement is used to identify the odd and even numbers that were generated in the previous step. The results are then inserted and displayed in a table, with even numbers in <b>BOLD</b>.</p>
+    }
+
+    //DISPLAY function(s)
+    function displayNumbers(numbers) {
+
+        let templateRows = "";
+
+        for (let index = 0; index < numbers.length; index++) {
+
+            let className = "even";
+            let number = numbers[index];
+
+            //display numbers and mark even numbers in bold
+
+            if(number % 2 == 0) {
+            
+                className = "even";
+
+            } else {
+
+                className = "odd";
+
+            }
+
+            templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>`;
+            
+        }
+
+        document.getElementById("results").innerHTML = templateRows
+
+    }
+
+                    </code></pre>
+                </div>
+                <div class="col-lg-4 py-2">
+                    <img src="img/Count on Me 0-100.png" alt="" width="300" height="300">
+                    <p class="display-6">The code is structured in three functions:</p>
+                    <h2>getValues</h2>
+                    <p>This function retrieves the values entered by the user in the app using the . It then validates them to ensure they are integers between 0-100. If they are not, an error message is displayed. Otherwise, the next functions are declared.</p>
+                    <h2>generateNumbers</h2>
+                    <p>This function uses a "for loop" to incrementally generate and return all the numbers from the start value to the end value.</p>
+                    <h2>displayNumbers</h2>
+                    <p>In this function, an "If/Else" statement is used to identify the odd and even numbers that were generated in the previous step. The results are then inserted and displayed in a table, with even numbers in <b>BOLD</b>.</p>
+                </div>
             </div>
         </div>
-    </div>
     </main>
 
     <!--=== Footer Section ===-->    
